@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Food Store</title>
+</head>
+<body>
+    <main>
+        <form class="form" action="/enviar.php" method="post">
+            <section class="form_header">
+                <div class="form_title"><h1 id="titulo">food store</h1></div>
+                <div class="form_subtitle"><p>Iniciar Sesión</p></div>
+            </section>
+            <section class="form_inputs">
+                <div class="form_email">
+                    <label for="email">Email:</label><br>
+                    <input type="email" placeholder="tucorreo@ejemplo.com" class="input" name="email" required id="email">
+                </div>
+                <div class="form_pass">
+                    <label for="pass">Contraseña:</label><br>
+                    <input type="password" placeholder="Mínimo 8 caracteres" class="input" name="pass" required id="pass">    
+                </div>
+                <button class="submit" type="submit">INGRESAR</button>
+            </section>
+            <section class="form_registro">
+                <div class="text_registro">¿No tenés cuenta? <a id="link_registro" href="#">Registrate acá</a></div>
+            </section>
+        </form>
+        
+    </main>    
+</body>
+</html>

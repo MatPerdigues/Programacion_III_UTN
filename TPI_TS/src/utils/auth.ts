@@ -18,11 +18,6 @@ export const checkUser = (correo: string, clave: string) => {
             localStorage.setItem("userData", JSON.stringify(userData));
 
             navigate(userData);
-            
-/*             if(userData.role === 'admin'){
-                window.location.href = "/src/pages/auth/registro/registro.html";
-            } else {
-                window.location.href = "/src/pages/client/client.html";
-            } */
+
         }
 }

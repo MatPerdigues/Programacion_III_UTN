@@ -13,6 +13,10 @@ formLogin?.addEventListener("submit", (e) => {
     checkUser(correo,clave);
 })
 
+
 form_registro?.addEventListener("click",()=>{
+    // window.location.href = "/registro.html";
     window.location.href = "/src/pages/auth/registro/registro.html";
-})
+});
+
+

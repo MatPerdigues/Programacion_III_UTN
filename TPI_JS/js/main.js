@@ -41,7 +41,7 @@ const cargarProductos = () => {
 }
 
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {    
     cargarCategorias();
     cargarProductos();
 });

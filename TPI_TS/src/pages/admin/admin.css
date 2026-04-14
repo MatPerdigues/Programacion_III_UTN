@@ -1,0 +1,14 @@
+h1{
+    display: flex;
+    border: 1px solid #ff6347;
+    color: #ff6347;
+    width: 50%;
+    min-width: 240px;
+    margin: auto;
+    justify-content: center;
+    margin-top: 10%;
+    height:  20vh;
+    align-items: center;
+    text-align: center;
+    
+}

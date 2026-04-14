@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registro.css">
+    <title>Food Store</title>
+</head>
+<body>
+    <main>        
+        <form class="form">
+            <section class="form_header">
+                <div class="form_title"><h1 id="titulo">food store</h1></div>
+                <div class="form_subtitle"><p>Registro de Usuario</p></div>
+            </section>
+            <section class="form_inputs">
+                <div class="form_email">
+                    <label for="email">Email:</label><br>
+                    <input type="email" placeholder="tucorreo@ejemplo.com" class="input" name="email" required id="email">
+                </div>
+                <div class="form_pass">
+                    <label for="pass">Contraseña:</label><br>
+                    <input type="password" placeholder="Mínimo 8 caracteres" class="input" name="pass" required id="pass">    
+                </div>
+                <button class="submit" type="submit">REGISTRAR</button>                
+            </section>
+        </form>        
+    </main>
+    <script type="module" src="./registro.ts"></script>       
+</body>
+</html>

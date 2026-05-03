@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Food Store</title>
+</head>
+<body>
+    <header class="header">
+        <span id="hamburguesa">☰</span>
+        <h1 id="titulo-header"><span class="icono">🍕</span>Food Store</h1>
+        <span id="iconoOpciones">⚙️</span>
+        <nav id="opciones-header">
+            <ul id="lista-header">
+                <li><a href="#" class="link-header">Inicio</a></li>
+                <li><a href="#" class="link-header">Mis pedidos</a></li>
+                <li><a href="#" class="link-header">Administración</a></li>
+                <li>
+                    <a href="../cart/cart.html" class="link-header">
+                        <div class="wrapper-carrito">
+                            <span>🛒</span>Carrito
+                            <div id="noti-carrito">
+                            </div>
+                        </div>    
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contenedor-main-aside">
+        <aside class="aside">
+            <h2>Categorías</h2>
+            <ul id="lista-categorias">
+                <li class="categoria-item" id="liProductos"><a id="linkProductos"></a></li>
+            </ul>
+        </aside>
+    
+        <main class="main">
+            <div class="contenedor-buscador">
+                <form id="buscador">    
+                    <div class="buscador-wrapper">
+                        <label for="input-buscador" id="icon-lupa"><span class="icono">🔍</span></i> </label>               
+                        <input type="text" placeholder="Buscar productos..." id="input-buscador" name="input-buscador"/>
+                    </div>
+                    <button id="btn-buscador" type="submit">Buscar</button>
+                </form>
+            </div>
+            <div class="seccion-productos">
+                <h2 id="title-sec-productos">Todos los Productos</h2>
+                
+                <div id="noProducts">
+                    <span id="carita">😕</span>
+                    <h2>No se encontraron productos</h2>
+                </div>    
+                <section class="contenedor-productos">
+                </section>
+                <div id="cardProducto">
+                    <div id="containerImg">    
+                        <img id="img-cardProducto" alt="Imagen de producto seleccionado">
+                    </div>
+                    <div id="detalleProducto">
+                        <h1 id="title-detalleProducto"></h1>
+                        <h2 id="precio-detalleProducto"></h2>
+                        <div class="card-estado-disponible" id="estado-detalleProducto"></div>
+                        <p class="desripcion-detalleProducto"></p>
+                        <h4>Cantidad</h4>
+                        <div class="selector-detalleProducto">
+                            <button class="btn-detalleProducto" id="btnRestar">-</button>
+                            <div class="cantidad-detalleProducto">0</div>
+                            <button class="btn-detalleProducto" id="btnSumar">+</button>
+                        </div>
+                        <div class="carrito-detalleProducto">Agregar al Carrito</div>
+                    </div>
+                    <div id="close-producto">x</div>    
+                </div>    
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <p>© 2024 Food Store. Todos los derechos reservados.</p>
+        <p>Contacto: <a href="mailto:info@foodstore.com">info@foodstore.com</a></p>
+    </footer>         
+    <script type="module" src="home.ts"></script>      
+</body>
+</html>

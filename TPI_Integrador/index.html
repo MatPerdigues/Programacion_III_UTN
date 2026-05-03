@@ -1,0 +1,54 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Store</title>
+</head>
+<body>
+    <h1>Hola Mundo!</h1>
+    <script type="module" src="/src/main.ts"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Food Store</title>
+</head>
+<body>
+    <main>
+        <form class="formLogin">
+            <section class="form_header">
+                <div class="form_title"><h1 id="titulo">food store</h1></div>
+                <div class="form_subtitle"><p>Iniciar Sesión</p></div>
+            </section>
+            <section class="form_inputs">
+                <div class="form_email">
+                    <label for="email">Email:</label><br>
+                    <input type="email" placeholder="tucorreo@ejemplo.com" class="input" name="email" required id="emailLogin">
+                </div>
+                <div class="form_pass">
+                    <label for="pass">Contraseña:</label><br>
+                    <input type="password" placeholder="Mínimo 8 caracteres" class="input" name="pass" required id="passLogin">    
+                </div>
+                <div id="validaciones">
+                    <p class="validaciones" id="validacion1">* Una letra mayúscula  <span class="iconoRegistro" id="icono1">❌</span></p>
+                    <p class="validaciones" id="validacion2">* Un caracter especial  <span class="iconoRegistro" id="icono2">❌</span></p>
+                    <p class="validaciones" id="validacion3">* Mínimo 8 caracteres  <span class="iconoRegistro" id="icono3">❌</span></p>
+                </div>
+                <button class="submit" type="submit">INGRESAR</button>
+            </section>
+            <div id="form_registro">
+                <h4>¿No tenes cuenta? <a href="./src/pages/auth/register/register.html">Registrate</a></h4>
+            </div>                       
+        </form>
+    </main>
+    <script type="module" src="./index.ts"></script>
+    <!-- <script type="module" src="/src/main.ts"></script>         -->
+</body>
+</html>

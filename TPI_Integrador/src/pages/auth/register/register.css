@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom right,
+    #ff6a00,   /* naranja fuerte */
+    #fca451    /* naranja blanquecino */
+  );
+}
+
+.form{
+    border: 1px solid #ddd;
+    width: 90%;
+    height: 60vh;
+    min-height: 615px;
+    margin: auto;
+    margin-top: 10vh;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px #333;    
+    max-width: 450px;  
+    min-width: 350px;
+}
+
+.form_header{
+    height: 20%;    
+}
+
+.form_title{ 
+    text-transform: uppercase; 
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    color: #ff6347;
+    margin-top: 10%;
+}
+
+.form_subtitle{    
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    color: #333;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 10%;
+}
+
+.form_inputs{      
+    height: 40%;
+    max-height: 240px;
+    width: 80%;
+    margin: auto;
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+.form_email, .form_pass{ 
+    height: 30%;
+}
+
+.input{
+    display: block;
+    margin: auto;
+    width: 95%;
+    padding-left: 2%;
+    height: 50%;
+    border: 1px solid darkgray;
+    border-radius: 3px;
+}
+
+.input:focus{
+    border: 2px solid rgb(109, 109, 231);
+    outline: none;
+}
+
+.form_nombre{
+    height: 30%;
+    margin-top: 5%;
+}
+
+.submit{
+    width: 40%;
+    height: 15%;
+    display: block;
+    background-color: #ff6347;
+    border: none;
+    margin-top: 10%;
+    color: white;
+    border-radius: 3px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    min-width: 110px;
+}
+
+.submit:hover{
+    background-color: rgb(161, 221, 166);
+    cursor: pointer;
+}
+
+#form_registro{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    margin-top: 30%;
+}
+
+#validaciones{
+
+    height: 30%;
+    color: red;
+    margin-top: -20px;
+    font-size: 14px;
+}
+
+input{
+    margin-top: 5%;
+}
+
+.iconoRegistro{
+    font-size: 8px;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Store</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header class="header">
+        <h1 id="titulo-header"><span class="icono">🍕</span>Food Store</h1>
+        <span id="iconoOpciones">⚙️</span>
+        <nav id="opciones-header">
+            <ul id="lista-header">
+                <li><a href="#" class="link-header">Inicio</a></li>
+                <li><a href="#" class="link-header">Mis pedidos</a></li>
+                <li><a href="#" class="link-header">Administración</a></li>
+                <li>
+                    <a href="../cart/cart.html" class="link-header">
+                        <div class="wrapper-carrito">
+                            <span>🛒</span>Carrito
+                            <div id="noti-carrito">
+                            </div>
+                        </div>    
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contenedor-main-aside">    
+        <main class="main">
+            <div id="contenedorCarrito">
+                <div id="itemsCarrito">
+                    <div id="carritoVacio">
+                        <span id="carita">😕</span>
+                        <h2>Aún no hay productos en el carrito</h2>
+                        <a href="../home/home.html" id="linkVolver"><div id="btnVolver">Volver</div></a>
+                    </div>
+                </div>
+                <div id="resumenCarrito">
+                    <h2 id="titleResumen">Resumen del Pedido</h2>
+                    <div class="subtotalResumen">
+                        <p id="textSubtotal">Subtotal: </p>
+                        <div id="varSubtotal"></div>                        
+                    </div>
+                    <div class="subtotalResumen">
+                        <p id="textSubtotal">Envio: </p>
+                        <div id="totalEnvio"></div> 
+                    </div>
+                    <div class="subtotalResumen" id="totalCompra">
+                        <p id="textTotalCompra">Total: </p>
+                        <div id="totalEnvio" class="totalCompra"></div> 
+                    </div>
+                    <div >
+                        <div id="btnPago">Proceder al Pago</div> 
+                    </div>
+                    <div class="btnResumen" id="btnBorrar">
+                        <div>Vaciar Carrito</div> 
+                    </div>
+                    <h1 id="totalCarrito"></h1>
+                </div>
+                <div id="btnPagar">Pagar</div>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <p>© 2024 Food Store. Todos los derechos reservados.</p>
+        <p>Contacto: <a href="mailto:info@foodstore.com">info@foodstore.com</a></p>
+    </footer>
+    <script type="module" src="cart.ts"></script> 
+</body>
+</html>

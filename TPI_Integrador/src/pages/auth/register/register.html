@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <title>Food Store</title>
+</head>
+<body>
+    <main>        
+        <form class="form">
+            <section class="form_header">
+                <div class="form_title"><h1 id="titulo">food store</h1></div>
+                <div class="form_subtitle"><p>Registro de Usuario</p></div>
+            </section>
+            <section class="form_inputs">
+                <div class="form_nombre">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" placeholder="Ingresa tu nombre completo" class="input" name="nombre" id="nombre">
+                </div>
+                <div class="form_email">
+                    <label for="email">Email:</label><br>
+                    <input type="email" placeholder="tucorreo@ejemplo.com" class="input" name="email" required id="email">
+                </div>
+                <div class="form_pass">
+                    <label for="pass">Contraseña:</label><br>
+                    <input type="password" placeholder="Mínimo 8 caracteres" class="input" name="pass" required id="pass">    
+                </div>
+                <div id="validaciones">
+                    <p class="validaciones" id="validacion1">* Una letra mayúscula  <span class="iconoRegistro" id="icono1">❌</span></p>
+                    <p class="validaciones" id="validacion2">* Un caracter especial  <span class="iconoRegistro" id="icono2">❌</span></p>
+                    <p class="validaciones" id="validacion3">* Mínimo 8 caracteres  <span class="iconoRegistro" id="icono3">❌</span></p>
+                </div>
+                <button class="submit" type="submit">REGISTRARSE</button>                
+            </section>
+            <div id="form_registro">
+                <h4>¿Ya tienes cuenta? <a href="../../../../index.html">Inicia sesión</a></h4>
+            </div>
+        </form>        
+    </main>
+    <script type="module" src="./register.ts"></script>
+    <script type="module" src="/src/main.ts"></script>               
+</body>
+</html>

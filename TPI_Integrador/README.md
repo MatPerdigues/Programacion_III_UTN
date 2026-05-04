@@ -36,7 +36,10 @@ Entre sus principales funcionalidades se destacan:
 
 ### 🔧 1. Descargar y descomprimir
 
+```bash
 Descargar el archivo .zip del proyecto y descomprimirlo en una carpeta local.
+```
+
 
 ### 📦 2. Instalar dependencias
 

@@ -30,14 +30,13 @@ Entre sus principales funcionalidades se destacan:
 
 ## 🚀 Instrucciones para ejecutar el proyecto
 
-### 🔧 1. Clonar el repositorio
-
-```bash
-git clone <url-del-repo>
-cd nombre-del-proyecto
-```
 
 ---
+
+
+🔧 1. Descargar y descomprimir
+
+Descargar el archivo .zip del proyecto y descomprimirlo en una carpeta local.
 
 ### 📦 2. Instalar dependencias
 
@@ -91,12 +90,14 @@ http://localhost:4173/
 ├── index.html
 ├── vite.config.ts
 ├── public/
-│   └── assets/        # Imágenes estáticas
+│   └── assets/        
 ├── src/
 │   ├── index.ts
 │   ├── index.css
+|   ├── global.d.ts
 │   ├── data/
 │   ├── utils/
+│   ├── types/
 │   └── pages/
 │       ├── store/
 │       └── auth/
@@ -107,17 +108,11 @@ http://localhost:4173/
 ## 🧠 Notas importantes
 
 * Las imágenes se almacenan en la carpeta `public/assets` y se referencian mediante rutas absolutas (`/assets/...`) para asegurar compatibilidad tanto en desarrollo como en producción.
-* Los estilos CSS se importan directamente en los archivos TypeScript usando `import './archivo.css'`, siguiendo la metodología recomendada por Vite.
 * El proyecto utiliza configuración multipágina en `vite.config.ts` para gestionar múltiples archivos HTML como puntos de entrada.
 
 ---
 
-## ✨ Estado del proyecto
-
-Proyecto funcional en su totalidad, cumpliendo con los requisitos de un sistema básico de e-commerce y preparado para futuras mejoras como autenticación real, backend o integración con APIs.
-
----
 
 ## 👨‍💻 Autor
 
-Desarrollado por Matías.
+Matías G. Perdigués.

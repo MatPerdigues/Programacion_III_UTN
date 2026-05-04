@@ -1,10 +1,11 @@
-
-import { checkUser} from "./src/utils/auth";
+import './index.css';
+console.log("index cargado");
+import { checkUser} from "./utils/auth";
 
 
 const formLogin = document.querySelector("form") as HTMLFormElement;
 const inputPass = document.querySelector("#passLogin") as HTMLInputElement;
-const form_registro = document.querySelector("#form_registro") as HTMLHeadingElement; 
+// const form_registro = document.querySelector("#form_registro") as HTMLHeadingElement; 
 const validacion1 = document.querySelector("#validacion1") as HTMLElement;
 const validacion2 = document.querySelector("#validacion2") as HTMLElement;
 const icono1 = document.querySelector("#icono1") as HTMLElement;

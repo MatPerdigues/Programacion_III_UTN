@@ -9,6 +9,7 @@ if (!localStorage.getItem("productos")) {
 }
 
 
+
 const categorias = getCategories();
 const productos: Product[] = JSON.parse(localStorage.getItem("productos") || "[]");
 const contenedorProductos = document.querySelector(".contenedor-productos") as HTMLElement;
@@ -39,24 +40,14 @@ const listaHeader = document.querySelector("#lista-header") as HTMLElement;
 
 
 
-btnBuscador.addEventListener("click",(e)=>{
-    e.preventDefault();    
-    let valorBuscado = inputBuscador.value;
-    productosFilter = productos.filter(prod => prod.nombre.toLowerCase().includes(valorBuscado.toLowerCase()))
-    if(productosFilter.length === 0){
-        titleProductos.textContent = "";
-    } else{
-       titleProductos.textContent = "Resultados"; 
-    }
-    cargarProductos();
-})
+
+
 
 
 
 
 let productosFilter : Product[] = productos;
 let iStock:number = 0;
-let iCantidad:number = 0;
 let productoActual: any = null;
 let category : string;
 
@@ -87,6 +78,20 @@ hamburguesa.addEventListener("click", () => {
 iconoOpciones.addEventListener("click", () => {
     listaHeader.classList.toggle("activo");
 }); 
+
+btnBuscador.addEventListener("click",(e)=>{
+    e.preventDefault();    
+    let valorBuscado = inputBuscador.value;
+    productosFilter = productos.filter(prod => prod.nombre.toLowerCase().includes(valorBuscado.toLowerCase()))
+    if(productosFilter.length === 0){
+        titleProductos.textContent = "";
+    } else{
+       titleProductos.textContent = "Resultados"; 
+    }
+    cargarProductos();
+})
+
+
 
 
 const categoriaProductos = () =>{
@@ -150,13 +155,14 @@ const cargarCategorias = () => {
 
 
 
-const cargarTarjeta = () => {    
+const cargarTarjeta = () => {  
+    // let iCantidad = 0;    
     const idProducto = localStorage.getItem("idProducto");
     const producto = productos.find(p => p.id === Number(idProducto));  
     if (!producto) return;
     productoActual = producto;
     iStock = producto?.stock;
-    iCantidad = 0;     
+    // iCantidad = 0;     
     imagen.src = producto.imagen;
     nombreProducto.textContent = producto.nombre;
     precioProducto.textContent = "$ " + producto.precio.toFixed(2);
@@ -195,7 +201,8 @@ const cargarProductos = () => {
             localStorage.setItem("idProducto", producto.id.toString());
             ocultarElementos();
             cargarTarjeta();
-        });
+        });       
+
         articulo.className = "articulo";
         articulo.innerHTML = `
          

@@ -119,7 +119,7 @@ items.forEach(item => {
 
 
 btnPago.addEventListener("click", () => {   
-    confirmarCompra(items,productos,detalleItem,btnPago,cantidad,carritoVacio);
+    confirmarCompra(items,productos,detalleItem,btnPago,cantidad,carritoVacio,btnPagar);
 }) 
 
 

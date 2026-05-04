@@ -34,7 +34,7 @@ Entre sus principales funcionalidades se destacan:
 ---
 
 
-🔧 1. Descargar y descomprimir
+### 🔧 1. Descargar y descomprimir
 
 Descargar el archivo .zip del proyecto y descomprimirlo en una carpeta local.
 

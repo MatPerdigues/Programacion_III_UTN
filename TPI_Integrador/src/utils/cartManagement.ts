@@ -120,9 +120,7 @@ export const consolidarStock = (
 
 
 export const confirmarCompra = (items: IProdCarrito[], productos: Product[],detalleItem : NodeListOf<HTMLElement>, btnPago : HTMLElement, cantidad : number, carritoVacio : HTMLElement, btnPagar : HTMLElement) => {  
-    if (cantidad > 0){
-        console.log(btnPago);
-        console.log(btnPagar);        
+    if (cantidad > 0){        
         if(!btnPagar)return;
         consolidarStock(items,productos);
         btnPago.classList.add("activo");
